@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="New.css">
+    <title>Медицинский центр "Здоровье"</title>
+</head>
+<body>
+    <header>
+        <h1>Медицинский центр "Здоровье"</h1>
+        <p>Ваше здоровье - наша забота</p>
+    </header>
+
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="Врачи.html#services">Услуги</a>
+        <a href="Врачи.html">Врачи</a>
+        <a href="#registration">Регистрация</a>
+        <a href="#appointment">Запись на приём</a>
+        <a href="Контакты.html">Контакты</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>О нашей клинике</h2>
+            <p>Мы предоставляем качественные медицинские услуги с 2010 года. Наша клиника оснащена современным оборудованием, а наши специалисты имеют высокую квалификацию.</p>
+            <div style="display: flex; margin-top: 2rem; gap: 2rem;">
+                <img src="original_4f8bfec43c72dd8d5f00000b_56e7da7cda866.jpg" alt="Клиника" style="width: 50%; border-radius: 8px;">
+                <img src="orig.jpeg" alt="Оборудование" style="width: 50%; border-radius: 8px;">
+            </div>
+        </section>
+
+        
+
+        <section id="registration">
+            <h2>Регистрация</h2>
+            <form>
+                <label for="name">ФИО:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+
+        <section id="appointment">
+            <h2>Запись на приём</h2>
+            <form>
+                <label for="patient-name">ФИО пациента:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+
+                <label for="doctor">Выберите врача:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">-- Выберите врача --</option>
+                    <option value="therapist">Терапевт</option>
+                    <option value="surgeon">Хирург</option>
+                    <option value="cardiologist">Кардиолог</option>
+                    <option value="neurologist">Невролог</option>
+                </select>
+
+                <label for="date">Дата приёма:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Время приёма:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="comments">Комментарии:</label>
+                <textarea id="comments" name="comments" rows="3"></textarea>
+
+                <button type="submit">Записаться</button>
+            </form>
+        </section>
+
+        <section id="contacts">
+            <h2>Как нас найти?</h2>
+            <p>Адрес: г. Воронеж, ул. Медицинская, д. 15</p>
+            <p>
+
+                Автобусы: 3, 9ка, 34, 49, 64, 69, 80, 84, 95, 103с, 120а, 366а, 366в.
+            </p>
+            <p>
+                Маршрутные такси: 16, 29, 46, 47, 51, 313в.
+            </p>
+            <p>Телефон: +7 (495) 123-45-67</p>
+            <p>Email: info@zdorovie.ru</p>
+            <p>Часы работы: Пн-Пт с 8:00 до 20:00, Сб с 9:00 до 18:00</p>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Медицинский центр "Здоровье". Все права защищены.</p>
+    </footer>
+</body>
+</html>
